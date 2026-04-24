@@ -225,7 +225,7 @@ void setup() {
 }
 
 void loop() {
-  // Capture and transmit one image fram
+  // Capture and transmit one image frame
   camera_capture();
   
   // Check if a UDP packet has been received
