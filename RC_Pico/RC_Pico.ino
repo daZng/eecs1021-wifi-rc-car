@@ -68,6 +68,11 @@ void loop() {
     m2.drive((int)convertedSpeed2);
     m1.drive((int)convertedSpeed1);
 
+  } else {
+    // Default to speed of zero if ESP drops connection
+    m2.drive(0);
+    m1.drive(0);
+
   }
 
   // Small delay for loop stability
