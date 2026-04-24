@@ -125,8 +125,8 @@ void loop() {
   int aPtRawValue = analogRead(PORTA_PIN);
 
   // Scale raw values from to 0-100
-  int bPtValue = (bPtRawValue/ 4095.0) *255;
-  int aPtValue = (aPtRawValue/ 4095.0) *255;
+  int bPtValue = (bPtRawValue/ 4095.0) *100;
+  int aPtValue = (aPtRawValue/ 4095.0) *100;
 
   // Send both values to ESP32
   udp.beginPacket(esp32_IP, PORT);
